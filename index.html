@@ -3,31 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NRL 2026 — Round 6 Tipping Card</title>
+<title>NRL 2026 — Round 7 Tipping Card</title>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root {
-  --navy:#0a1628; --navy-mid:#112240; --navy-light:#1a3356;
-  --gold:#f0b429; --gold-light:#f7c948; --gold-dim:#c8941f;
-  --white:#ffffff; --off-white:#e8edf5; --grey:#8899aa; --grey-light:#b8c8d8;
-  --banker-bg:#0d3320; --banker-text:#3ddc84; --banker-border:#1a5c38;
-  --strong-bg:#1a2e0a; --strong-text:#7ecf3a; --strong-border:#2d5012;
-  --coinflip-bg:#2a1f00; --coinflip-text:#f0b429; --coinflip-border:#5a4000;
-  --review-bg:#2a0a00; --review-text:#ff6b35; --review-border:#5a1800;
-  --lower-bg:#1e1a00; --lower-text:#d4a017; --lower-border:#4a3800;
-  --done-bg:#0a1a2a; --done-text:#4a9eff; --done-border:#1a3a5a;
-}
-*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
-html{font-size:16px;}
-body{background:#060e1a;font-family:'Barlow',sans-serif;color:var(--white);min-height:100vh;padding:12px;}
+:root{--navy:#0a1628;--navy-mid:#112240;--navy-light:#1a3356;--gold:#f0b429;--gold-light:#f7c948;--gold-dim:#c8941f;--white:#ffffff;--off-white:#e8edf5;--grey:#8899aa;--grey-light:#b8c8d8;--banker-bg:#0d3320;--banker-text:#3ddc84;--banker-border:#1a5c38;--strong-bg:#1a2e0a;--strong-text:#7ecf3a;--strong-border:#2d5012;--coinflip-bg:#2a1f00;--coinflip-text:#f0b429;--coinflip-border:#5a4000;--lower-bg:#1e1a00;--lower-text:#d4a017;--lower-border:#4a3800;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:#060e1a;font-family:'Barlow',sans-serif;color:#fff;min-height:100vh;padding:12px;}
 .card{width:100%;max-width:520px;margin:0 auto;display:flex;flex-direction:column;}
 .header{background:linear-gradient(135deg,#0a1628 0%,#1a3356 50%,#0a1628 100%);border:1px solid var(--navy-light);border-bottom:3px solid var(--gold);border-radius:8px 8px 0 0;padding:20px 16px 16px;position:relative;overflow:hidden;}
-.header::before{content:'';position:absolute;top:-30px;right:-30px;width:140px;height:140px;background:radial-gradient(circle,rgba(240,180,41,0.08) 0%,transparent 70%);border-radius:50%;pointer-events:none;}
+.header::before{content:'';position:absolute;top:-30px;right:-30px;width:140px;height:140px;background:radial-gradient(circle,rgba(240,180,41,0.08) 0%,transparent 70%);border-radius:50%;}
 .header-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;}
 .header-title{font-family:'Barlow Condensed',sans-serif;font-size:9px;font-weight:700;letter-spacing:3px;color:var(--gold);text-transform:uppercase;margin-bottom:4px;}
-.header-round{font-family:'Barlow Condensed',sans-serif;font-size:38px;font-weight:900;line-height:1;color:var(--white);letter-spacing:-1px;}
+.header-round{font-family:'Barlow Condensed',sans-serif;font-size:38px;font-weight:900;line-height:1;color:#fff;letter-spacing:-1px;}
 .header-round span{color:var(--gold);}
-.header-subtitle{font-size:11px;color:var(--grey-light);margin-top:4px;font-weight:500;line-height:1.4;}
+.header-subtitle{font-size:11px;color:var(--grey-light);margin-top:4px;font-weight:500;}
 .header-record{text-align:right;flex-shrink:0;}
 .record-label{font-size:8px;letter-spacing:2px;color:var(--grey);text-transform:uppercase;font-weight:600;}
 .record-value{font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:800;color:var(--gold);line-height:1.1;}
@@ -39,630 +28,302 @@ body{background:#060e1a;font-family:'Barlow',sans-serif;color:var(--white);min-h
 .section-line{flex:1;height:1px;background:linear-gradient(to right,rgba(240,180,41,0.3),transparent);}
 .summary-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}
 .summary-table{width:100%;min-width:420px;border-collapse:collapse;font-size:12px;}
-.summary-table th{padding:8px 8px;text-align:left;font-family:'Barlow Condensed',sans-serif;font-size:9px;font-weight:700;letter-spacing:2px;color:var(--grey);text-transform:uppercase;background:var(--navy-mid);border-bottom:1px solid var(--navy-light);white-space:nowrap;}
-.summary-table th:first-child{padding-left:16px;}
-.summary-table th:last-child{padding-right:16px;}
+.summary-table th{padding:8px;text-align:left;font-family:'Barlow Condensed',sans-serif;font-size:9px;font-weight:700;letter-spacing:2px;color:var(--grey);text-transform:uppercase;background:var(--navy-mid);border-bottom:1px solid var(--navy-light);white-space:nowrap;}
+.summary-table th:first-child,.summary-table td:first-child{padding-left:16px;}
+.summary-table th:last-child,.summary-table td:last-child{padding-right:16px;}
 .summary-table td{padding:10px 8px;border-bottom:1px solid rgba(255,255,255,0.04);vertical-align:middle;white-space:nowrap;}
-.summary-table td:first-child{padding-left:16px;color:var(--grey);font-size:11px;font-weight:600;}
-.summary-table td:last-child{padding-right:16px;}
+.summary-table td:first-child{color:var(--grey);font-size:11px;font-weight:600;}
 .summary-table tr:last-child td{border-bottom:none;}
-.game-name{font-weight:600;color:var(--white);font-size:12px;}
-.game-name .vs{color:var(--grey);font-weight:400;margin:0 3px;font-size:11px;}
-.tip-team{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;color:var(--gold);}
-.pct{font-weight:600;color:var(--white);font-size:12px;}
-.pct-mkt{color:var(--grey-light);font-size:11px;}
-.margin{font-weight:600;font-size:12px;}
-.margin.pos{color:#4a9eff;}
-.margin.neg{color:#ff7b7b;}
+.gn{font-weight:600;color:#fff;font-size:12px;}
+.gn .vs{color:var(--grey);font-weight:400;margin:0 3px;font-size:11px;}
+.tt{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;color:var(--gold);}
+.pct{font-weight:600;color:#fff;font-size:12px;}
+.pm{color:var(--grey-light);font-size:11px;}
+.mg{font-weight:600;font-size:12px;}
+.mg.pos{color:#4a9eff;}
+.mg.neg{color:#ff7b7b;}
 .ou{color:var(--grey-light);font-size:11px;}
 .table-note{padding:6px 16px 10px;font-size:10px;color:var(--grey);}
 .flag{display:inline-flex;align-items:center;gap:4px;padding:3px 8px;border-radius:2px;font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:1px;white-space:nowrap;border:1px solid;}
 .flag-banker{background:var(--banker-bg);color:var(--banker-text);border-color:var(--banker-border);}
 .flag-strong{background:var(--strong-bg);color:var(--strong-text);border-color:var(--strong-border);}
 .flag-coinflip{background:var(--coinflip-bg);color:var(--coinflip-text);border-color:var(--coinflip-border);}
-.flag-review{background:var(--review-bg);color:var(--review-text);border-color:var(--review-border);}
 .flag-lower{background:var(--lower-bg);color:var(--lower-text);border-color:var(--lower-border);}
-.flag-done{background:var(--done-bg);color:var(--done-text);border-color:var(--done-border);}
 .games-grid{display:flex;flex-direction:column;}
-.game-card{border-bottom:1px solid var(--navy-light);}
-.game-card:last-child{border-bottom:none;}
-.game-card-inner{padding:16px;}
-.game-card-header{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:12px;}
-.game-num{font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;color:var(--grey);letter-spacing:2px;margin-bottom:2px;}
-.game-matchup{font-family:'Barlow Condensed',sans-serif;font-size:20px;font-weight:800;color:var(--white);line-height:1.1;}
-.game-matchup .tipped{color:var(--gold);}
-.game-meta{font-size:11px;color:var(--grey);margin-top:4px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;}
-.game-tip-bar{background:var(--navy-mid);border:1px solid var(--navy-light);border-radius:3px;padding:10px 12px;margin-bottom:12px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
-.tip-label{font-family:'Barlow Condensed',sans-serif;font-size:9px;font-weight:700;letter-spacing:2px;color:var(--grey);text-transform:uppercase;flex-shrink:0;}
-.tip-team-lg{font-family:'Barlow Condensed',sans-serif;font-size:19px;font-weight:900;color:var(--gold);}
-.tip-divider{color:var(--navy-light);font-size:16px;}
-.tip-stat{display:flex;flex-direction:column;align-items:center;}
-.tip-stat-label{font-size:8px;font-weight:700;letter-spacing:1.5px;color:var(--grey);text-transform:uppercase;}
-.tip-stat-value{font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:700;color:var(--white);}
-.tip-stat-value.gold{color:var(--gold);}
-.tip-stat-value.green{color:#3ddc84;}
-.tip-stat-value.edge-nil{color:var(--grey);}
-.ml-auto{margin-left:auto;}
-.game-reasoning{font-size:13px;line-height:1.6;color:var(--off-white);margin-bottom:10px;}
-.game-reasoning strong{color:var(--white);}
-.override-note{font-size:12px;color:var(--grey-light);font-style:italic;padding:7px 10px;border-left:2px solid var(--gold-dim);margin-bottom:10px;background:rgba(240,180,41,0.04);line-height:1.5;}
-.risk-note{font-size:12px;color:var(--grey);display:flex;gap:6px;align-items:flex-start;line-height:1.5;}
-.risk-note::before{content:'26A0';color:var(--gold-dim);flex-shrink:0;margin-top:1px;}
-.review-block{background:rgba(255,107,53,0.04);border:1px solid var(--review-border);border-radius:3px;padding:12px 14px;margin-bottom:12px;}
-.review-header{font-size:10px;font-weight:700;letter-spacing:1.5px;color:var(--review-text);text-transform:uppercase;margin-bottom:10px;line-height:1.4;}
-.review-row{display:flex;gap:8px;margin-bottom:6px;font-size:12px;line-height:1.5;}
-.review-row:last-child{margin-bottom:0;}
-.review-arrow{font-family:'Barlow Condensed',sans-serif;font-weight:700;color:var(--review-text);flex-shrink:0;width:52px;font-size:10px;text-transform:uppercase;letter-spacing:1px;padding-top:2px;}
-.review-arrow.verdict{color:var(--gold);}
-.review-text{color:var(--off-white);}
-.summary-grid{padding:14px 16px;display:flex;flex-direction:column;gap:8px;}
-.summary-item{display:flex;gap:10px;align-items:flex-start;padding:10px 12px;background:var(--navy-mid);border:1px solid var(--navy-light);border-radius:3px;}
-.summary-icon{font-size:16px;flex-shrink:0;line-height:1.3;}
-.summary-type{font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:2px;color:var(--grey);text-transform:uppercase;margin-bottom:2px;}
-.summary-detail{font-size:13px;color:var(--off-white);line-height:1.5;}
-.summary-detail strong{color:var(--gold);}
-.group-chat-block{padding:16px;background:linear-gradient(180deg,var(--navy-mid) 0%,var(--navy) 100%);}
-.group-chat-label{display:inline-flex;align-items:center;gap:6px;background:var(--gold);color:var(--navy);padding:5px 12px;font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase;border-radius:2px;margin-bottom:14px;}
-.group-chat-text{font-size:14px;line-height:1.7;color:var(--off-white);}
-.group-chat-text p{margin-bottom:10px;}
-.group-chat-text p:last-child{margin-bottom:0;}
-.group-chat-text strong{color:var(--white);}
-.full-card-line{color:var(--gold);font-weight:600;}
+.gc{border-bottom:1px solid var(--navy-light);}
+.gc:last-child{border-bottom:none;}
+.gci{padding:16px;}
+.gch{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:12px;}
+.gnum{font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;color:var(--grey);letter-spacing:2px;margin-bottom:2px;}
+.gmatch{font-family:'Barlow Condensed',sans-serif;font-size:20px;font-weight:800;color:#fff;line-height:1.1;}
+.gmatch .tp{color:var(--gold);}
+.gmeta{font-size:11px;color:var(--grey);margin-top:4px;display:flex;flex-wrap:wrap;gap:8px;}
+.gtb{background:var(--navy-mid);border:1px solid var(--navy-light);border-radius:3px;padding:10px 12px;margin-bottom:12px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+.tlbl{font-family:'Barlow Condensed',sans-serif;font-size:9px;font-weight:700;letter-spacing:2px;color:var(--grey);text-transform:uppercase;flex-shrink:0;}
+.ttlg{font-family:'Barlow Condensed',sans-serif;font-size:19px;font-weight:900;color:var(--gold);}
+.tdiv{color:var(--navy-light);font-size:16px;}
+.ts{display:flex;flex-direction:column;align-items:center;}
+.tsl{font-size:8px;font-weight:700;letter-spacing:1.5px;color:var(--grey);text-transform:uppercase;}
+.tsv{font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:700;color:#fff;}
+.tsv.gold{color:var(--gold);}
+.tsv.green{color:#3ddc84;}
+.tsv.nil{color:var(--grey);}
+.mla{margin-left:auto;}
+.gr{font-size:13px;line-height:1.6;color:var(--off-white);margin-bottom:10px;}
+.gr strong{color:#fff;}
+.rn{font-size:12px;color:var(--grey);display:flex;gap:6px;align-items:flex-start;line-height:1.5;}
+.rn::before{content:'⚠';color:var(--gold-dim);flex-shrink:0;margin-top:1px;}
+.sg{padding:14px 16px;display:flex;flex-direction:column;gap:8px;}
+.si{display:flex;gap:10px;align-items:flex-start;padding:10px 12px;background:var(--navy-mid);border:1px solid var(--navy-light);border-radius:3px;}
+.si-ico{font-size:16px;flex-shrink:0;line-height:1.3;}
+.si-type{font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:2px;color:var(--grey);text-transform:uppercase;margin-bottom:2px;}
+.si-det{font-size:13px;color:var(--off-white);line-height:1.5;}
+.si-det strong{color:var(--gold);}
+.gcb{padding:16px;background:linear-gradient(180deg,var(--navy-mid) 0%,var(--navy) 100%);}
+.gcl{display:inline-flex;align-items:center;gap:6px;background:var(--gold);color:var(--navy);padding:5px 12px;font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase;border-radius:2px;margin-bottom:14px;}
+.gct{font-size:14px;line-height:1.7;color:var(--off-white);}
+.gct p{margin-bottom:10px;}
+.gct p:last-child{margin-bottom:0;}
+.gct strong{color:#fff;}
+.fcl{color:var(--gold);font-weight:600;}
 .footer{padding:12px 16px;border-top:1px solid var(--navy-light);background:var(--navy-mid);}
-.footer-left{font-size:10px;color:var(--grey);letter-spacing:0.5px;margin-bottom:2px;}
-.footer-right{font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;color:var(--grey);letter-spacing:1px;}
-.footer-right span{color:var(--gold);}
+.fl{font-size:10px;color:var(--grey);letter-spacing:0.5px;margin-bottom:2px;}
+.fr{font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;color:var(--grey);letter-spacing:1px;}
+.fr span{color:var(--gold);}
 </style>
 </head>
 <body>
 <div class="card">
 
-<!-- HEADER -->
 <div class="header">
   <div class="header-top">
     <div>
       <div class="header-title">NRL 2026 Tipping Card</div>
-      <div class="header-round">ROUND <span>6</span></div>
-      <div class="header-subtitle">Thu 9 Apr &ndash; Sun 12 Apr &middot; Model v6.2 &middot; Monte Carlo 1,000 runs</div>
+      <div class="header-round">ROUND <span>7</span></div>
+      <div class="header-subtitle">April 16–19, 2026 · Bye: Sharks</div>
     </div>
     <div class="header-record">
       <div class="record-label">Season Record</div>
-      <div class="record-value">30/40</div>
-      <div class="record-pct">75.0% accuracy</div>
+      <div class="record-value">33/48</div>
+      <div class="record-pct">68.75% accuracy</div>
     </div>
   </div>
 </div>
 
-<!-- SUMMARY TABLE -->
 <div class="section">
-  <div class="section-header">
-    <span class="section-label">Summary</span>
-    <div class="section-line"></div>
-  </div>
+  <div class="section-header"><span class="section-label">Summary</span><div class="section-line"></div></div>
   <div class="summary-scroll">
     <table class="summary-table">
-      <thead>
-        <tr>
-          <th>#</th><th>Game</th><th>Tip</th><th>Model%</th>
-          <th>Mkt%</th><th>Margin</th><th>O/U</th><th>Flag</th>
-        </tr>
-      </thead>
+      <thead><tr><th>#</th><th>Game</th><th>Tip</th><th>Model%</th><th>Mkt%</th><th>Margin</th><th>O/U</th><th>Flag</th></tr></thead>
       <tbody>
-        <tr>
-          <td>G1</td>
-          <td><span class="game-name">Bulldogs <span class="vs">v</span> Panthers</span></td>
-          <td><span class="tip-team">PANTHERS</span></td>
-          <td><span class="pct">97%</span></td>
-          <td><span class="pct-mkt">85.5%</span></td>
-          <td><span class="margin neg">&minus;18</span></td>
-          <td><span class="ou">51.0&#9733;</span></td>
-          <td><span class="flag flag-banker">&#128274; BANKER</span></td>
-        </tr>
-        <tr>
-          <td>G2</td>
-          <td><span class="game-name">Dragons <span class="vs">v</span> Sea Eagles</span></td>
-          <td><span class="tip-team">SEA EAGLES</span></td>
-          <td><span class="pct">97%</span></td>
-          <td><span class="pct-mkt">80.0%</span></td>
-          <td><span class="margin neg">&minus;21</span></td>
-          <td><span class="ou">51.8&#9733;</span></td>
-          <td><span class="flag flag-banker">&#128274; BANKER</span></td>
-        </tr>
-        <tr>
-          <td>G3</td>
-          <td><span class="game-name">Broncos <span class="vs">v</span> Cowboys</span></td>
-          <td><span class="tip-team">BRONCOS</span></td>
-          <td><span class="pct">67%&#8599;*</span></td>
-          <td><span class="pct-mkt">58.8%</span></td>
-          <td><span class="margin pos">+8</span></td>
-          <td><span class="ou">48.9</span></td>
-          <td><span class="flag flag-lower">&#11015; LOWER CONF</span></td>
-        </tr>
-        <tr>
-          <td>G4</td>
-          <td><span class="game-name">Rabbitohs <span class="vs">v</span> Raiders</span></td>
-          <td><span class="tip-team">RABBITOHS</span></td>
-          <td><span class="pct">75%&#8599;*</span></td>
-          <td><span class="pct-mkt">66.7%</span></td>
-          <td><span class="margin pos">+12</span></td>
-          <td><span class="ou">50.1&#9733;</span></td>
-          <td><span class="flag flag-strong">&#128170; STRONG</span></td>
-        </tr>
-        <tr>
-          <td>G5</td>
-          <td><span class="game-name">Sharks <span class="vs">v</span> Roosters</span></td>
-          <td><span class="tip-team">ROOSTERS</span></td>
-          <td><span class="pct">58%&#8599;*</span></td>
-          <td><span class="pct-mkt">50.0%</span></td>
-          <td><span class="margin neg">&minus;8</span></td>
-          <td><span class="ou">51.4&#9733;</span></td>
-          <td><span class="flag flag-coinflip">&#129689; COIN-FLIP</span></td>
-        </tr>
-        <tr>
-          <td>G6</td>
-          <td><span class="game-name">Storm <span class="vs">v</span> Warriors</span></td>
-          <td><span class="tip-team">STORM</span></td>
-          <td><span class="pct">78%&#8599;*</span></td>
-          <td><span class="pct-mkt">64.5%</span></td>
-          <td><span class="margin pos">+18</span></td>
-          <td><span class="ou">52.4&#9733;</span></td>
-          <td><span class="flag flag-strong">&#128170; STRONG</span></td>
-        </tr>
-        <tr>
-          <td>G7</td>
-          <td><span class="game-name">Eels <span class="vs">v</span> Titans</span></td>
-          <td><span class="tip-team">EELS</span></td>
-          <td><span class="pct">80%&#8599;*</span></td>
-          <td><span class="pct-mkt">69.0%</span></td>
-          <td><span class="margin pos">+16</span></td>
-          <td><span class="ou">51.6&#9733;</span></td>
-          <td><span class="flag flag-strong">&#128170; STRONG</span></td>
-        </tr>
-        <tr>
-          <td>G8</td>
-          <td><span class="game-name">Tigers <span class="vs">v</span> Knights</span></td>
-          <td><span class="tip-team">KNIGHTS</span></td>
-          <td><span class="pct">65%*</span></td>
-          <td><span class="pct-mkt">47.6%</span></td>
-          <td><span class="margin neg">&minus;5</span></td>
-          <td><span class="ou">47.7</span></td>
-          <td><span class="flag flag-review">&#9888; REVIEW</span></td>
-        </tr>
+        <tr><td>G1</td><td><span class="gn">Cowboys <span class="vs">v</span> Sea Eagles</span></td><td><span class="tt">COWBOYS</span></td><td><span class="pct">68.4%</span></td><td><span class="pm">62%</span></td><td><span class="mg pos">+21</span></td><td><span class="ou">44</span></td><td><span class="flag flag-strong">💪 STRONG</span></td></tr>
+        <tr><td>G2</td><td><span class="gn">Raiders <span class="vs">v</span> Storm</span></td><td><span class="tt">STORM</span></td><td><span class="pct">53.2%</span></td><td><span class="pm">55%</span></td><td><span class="mg neg">−4</span></td><td><span class="ou">38</span></td><td><span class="flag flag-coinflip">🪙 COIN-FLIP</span></td></tr>
+        <tr><td>G3</td><td><span class="gn">Dolphins <span class="vs">v</span> Panthers</span></td><td><span class="tt">PANTHERS</span></td><td><span class="pct">69.5%</span></td><td><span class="pm">75%</span></td><td><span class="mg neg">−22</span></td><td><span class="ou">46</span></td><td><span class="flag flag-strong">💪 STRONG</span></td></tr>
+        <tr><td>G4</td><td><span class="gn">Warriors <span class="vs">v</span> Titans</span></td><td><span class="tt">WARRIORS</span></td><td><span class="pct">70.3%</span></td><td><span class="pm">71%</span></td><td><span class="mg pos">+24</span></td><td><span class="ou">46</span></td><td><span class="flag flag-strong">💪 STRONG</span></td></tr>
+        <tr><td>G5</td><td><span class="gn">Rabbitohs <span class="vs">v</span> Dragons</span></td><td><span class="tt">RABBITOHS</span></td><td><span class="pct">81.5%</span></td><td><span class="pm">85%</span></td><td><span class="mg pos">+36</span></td><td><span class="ou">50★</span></td><td><span class="flag flag-banker">🔒 BANKER</span></td></tr>
+        <tr><td>G6</td><td><span class="gn">Tigers <span class="vs">v</span> Broncos</span></td><td><span class="tt">TIGERS</span></td><td><span class="pct">53.2%</span></td><td><span class="pm">62%</span></td><td><span class="mg pos">+3</span></td><td><span class="ou">44</span></td><td><span class="flag flag-coinflip">🪙 COIN-FLIP</span></td></tr>
+        <tr><td>G7</td><td><span class="gn">Roosters <span class="vs">v</span> Knights</span></td><td><span class="tt">ROOSTERS</span></td><td><span class="pct">76.2%</span></td><td><span class="pm">67%</span></td><td><span class="mg pos">+32</span></td><td><span class="ou">48</span></td><td><span class="flag flag-banker">🔒 BANKER</span></td></tr>
+        <tr><td>G8</td><td><span class="gn">Eels <span class="vs">v</span> Bulldogs</span></td><td><span class="tt">BULLDOGS</span></td><td><span class="pct">55.9%</span></td><td><span class="pm">63%</span></td><td><span class="mg neg">−7</span></td><td><span class="ou">44</span></td><td><span class="flag flag-lower">—</span></td></tr>
       </tbody>
     </table>
   </div>
-  <div class="table-note">* Raw model% overridden after review &middot; &#9733; O/U diverges 6+ pts from Sportsbet line &middot; G4/G5 = Perth neutral (home adv = 0) &middot; Swipe &rarr;</div>
+  <div class="table-note">★ O/U model diverges 6+ pts from estimated Sportsbet line &nbsp;·&nbsp; Swipe to scroll →</div>
 </div>
 
-<!-- GAME BY GAME -->
 <div class="section">
-  <div class="section-header">
-    <span class="section-label">Game by Game</span>
-    <div class="section-line"></div>
-  </div>
+  <div class="section-header"><span class="section-label">Game by Game</span><div class="section-line"></div></div>
   <div class="games-grid">
 
-    <!-- G1: BULLDOGS v PANTHERS — BANKER -->
-    <div class="game-card">
-      <div class="game-card-inner">
-        <div class="game-card-header">
-          <div>
-            <div class="game-num">G1 &mdash; THU APR 9</div>
-            <div class="game-matchup">Bulldogs v <span class="tipped">Panthers</span></div>
-            <div class="game-meta">
-              <span>&#128205; Accor Stadium</span>
-              <span>&#128197; Thu 7:50pm</span>
-            </div>
-          </div>
-          <span class="flag flag-banker">&#128274; BANKER</span>
+    <div class="gc"><div class="gci">
+      <div class="gch">
+        <div>
+          <div class="gnum">GAME 1 · THU 7:50PM</div>
+          <div class="gmatch"><span class="tp">COWBOYS</span> <span style="color:var(--grey);font-size:16px">v</span> SEA EAGLES</div>
+          <div class="gmeta"><span>📍 QCBS Townsville</span><span>📅 Thu Apr 16</span></div>
         </div>
-        <div class="game-tip-bar">
-          <span class="tip-label">Tip</span>
-          <span class="tip-team-lg">PANTHERS</span>
-          <span class="tip-divider">|</span>
-          <div class="tip-stat">
-            <span class="tip-stat-label">Model</span>
-            <span class="tip-stat-value gold">97%</span>
-          </div>
-          <div class="tip-stat">
-            <span class="tip-stat-label">Market</span>
-            <span class="tip-stat-value">85.5%</span>
-          </div>
-          <div class="tip-stat">
-            <span class="tip-stat-label">Edge</span>
-            <span class="tip-stat-value green">+11.5%</span>
-          </div>
-          <div class="tip-stat ml-auto">
-            <span class="tip-stat-label">Margin</span>
-            <span class="tip-stat-value">&minus;18</span>
-          </div>
-        </div>
-        <div class="game-reasoning">
-          <strong>Crichton is out</strong> &mdash; shoulder/knee, mid-game R5. Bronson Xerri in at left centre. Bulldogs are 0/2 at Accor in 2026 and conceded 55+ points in their last two games there. Panthers 9/10 all-time vs Bulldogs, and <strong>11 of last 12 vs Sydney clubs</strong>. At 5-0 with +150 differential, this is still the best team in the competition regardless of venue.
-        </div>
-        <div class="risk-note">Panthers 1/7 Thursday away record. Quirky stat. Not fading 5-0 Panthers on a Thursday anomaly.</div>
+        <span class="flag flag-strong">💪 STRONG</span>
       </div>
-    </div>
+      <div class="gtb">
+        <span class="tlbl">Tip</span><span class="ttlg">COWBOYS</span><span class="tdiv">|</span>
+        <div class="ts"><span class="tsl">Model</span><span class="tsv">68.4%</span></div>
+        <div class="ts"><span class="tsl">Market</span><span class="tsv">62%</span></div>
+        <div class="ts"><span class="tsl">Edge</span><span class="tsv green">+6%</span></div>
+        <div class="ts mla"><span class="tsl">Margin</span><span class="tsv">+21</span></div>
+      </div>
+      <div class="gr"><strong>Townsville fortress is the story.</strong> QCBS receives the highest home advantage in the competition (+85 Elo) — Cowboys rarely lose there. Sea Eagles arrive unchanged but Mahoney is out, Soni Luke starts at hooker (−20 spine downgrade applied). Cowboys Elo advantage at home still comfortably holds. Model 68.4% vs market 62% — a genuine +6% edge. Strong call.</div>
+      <div class="rn">Soni Luke at hooker is a real step down from Mahoney. Payten pressure flag active (SD widened +20). Sea Eagles won't roll over.</div>
+    </div></div>
 
-    <!-- G2: DRAGONS v SEA EAGLES — BANKER -->
-    <div class="game-card">
-      <div class="game-card-inner">
-        <div class="game-card-header">
-          <div>
-            <div class="game-num">G2 &mdash; FRI APR 10</div>
-            <div class="game-matchup">Dragons v <span class="tipped">Sea Eagles</span></div>
-            <div class="game-meta">
-              <span>&#128205; WIN Stadium, Wollongong</span>
-              <span>&#128197; Fri 6:00pm</span>
-            </div>
-          </div>
-          <span class="flag flag-banker">&#128274; BANKER</span>
+    <div class="gc"><div class="gci">
+      <div class="gch">
+        <div>
+          <div class="gnum">GAME 2 · FRI 6:00PM</div>
+          <div class="gmatch"><span class="tp">STORM</span> <span style="color:var(--grey);font-size:16px">v</span> RAIDERS</div>
+          <div class="gmeta"><span>📍 GIO Canberra</span><span>📅 Fri Apr 17</span></div>
         </div>
-        <div class="game-tip-bar">
-          <span class="tip-label">Tip</span>
-          <span class="tip-team-lg">SEA EAGLES</span>
-          <span class="tip-divider">|</span>
-          <div class="tip-stat">
-            <span class="tip-stat-label">Model</span>
-            <span class="tip-stat-value gold">97%</span>
-          </div>
-          <div class="tip-stat">
-            <span class="tip-stat-label">Market</span>
-            <span class="tip-stat-value">80.0%</span>
-          </div>
-          <div class="tip-stat">
-            <span class="tip-stat-label">Edge</span>
-            <span class="tip-stat-value green">+17%</span>
-          </div>
-          <div class="tip-stat ml-auto">
-            <span class="tip-stat-label">Margin</span>
-            <span class="tip-stat-value">&minus;21</span>
-          </div>
-        </div>
-        <div class="game-reasoning">
-          Dragons <strong>nine-game losing streak</strong>, worst start in club history. Flanagan returns from concussion but the structural decay is deeper than one halfback &mdash; 0-5, -77 differential, scored 0 points last week. Foran's Sea Eagles are <strong>coming off 52-18</strong> and Saab returns from suspension. The one counter-signal worth noting: Dragons W10 L2 at WIN Stadium vs Manly since 1998. Ancient history against a 147-point Elo gap.
-        </div>
-        <div class="risk-note">WIN Stadium Manly H2H record is real. Filed as upset insurance but not changing the tip.</div>
+        <span class="flag flag-coinflip">🪙 COIN-FLIP</span>
       </div>
-    </div>
+      <div class="gtb">
+        <span class="tlbl">Tip</span><span class="ttlg">STORM</span><span class="tdiv">|</span>
+        <div class="ts"><span class="tsl">Model</span><span class="tsv">53.2%</span></div>
+        <div class="ts"><span class="tsl">Market</span><span class="tsv">55%</span></div>
+        <div class="ts"><span class="tsl">Edge</span><span class="tsv nil">−2%</span></div>
+        <div class="ts mla"><span class="tsl">Margin</span><span class="tsv">−4</span></div>
+      </div>
+      <div class="gr"><strong>Tipping Storm, holding loosely.</strong> Storm's working Elo (1575, adjusted down for overcounting) gives a razor-thin edge even against Raiders' Canberra home boost (+55). Raiders have lost Fogarty to a rookie replacement and halves uncertainty persists. Storm are minimal changers (Waitere starts, Leo reserves). Market −2.5. No model edge. Tip Storm for the talent gap — but this is a genuine coin-flip.</div>
+      <div class="rn">Raiders crowd at GIO can shift close games. Storm 6-0 but this is a proper hostile away environment where they're barely favourites.</div>
+    </div></div>
 
-    <!-- G3: BRONCOS v COWBOYS — LOWER CONF (REVIEW) -->
-    <div class="game-card">
-      <div class="game-card-inner">
-        <div class="game-card-header">
-          <div>
-            <div class="game-num">G3 &mdash; FRI APR 10</div>
-            <div class="game-matchup"><span class="tipped">Broncos</span> v Cowboys</div>
-            <div class="game-meta">
-              <span>&#128205; Suncorp Stadium</span>
-              <span>&#128197; Fri 8:00pm</span>
-            </div>
-          </div>
-          <span class="flag flag-lower">&#11015; LOWER CONF</span>
+    <div class="gc"><div class="gci">
+      <div class="gch">
+        <div>
+          <div class="gnum">GAME 3 · FRI 8:00PM</div>
+          <div class="gmatch"><span class="tp">PANTHERS</span> <span style="color:var(--grey);font-size:16px">v</span> DOLPHINS</div>
+          <div class="gmeta"><span>📍 TIO Darwin</span><span>📅 Fri Apr 17</span><span style="color:#ff9944;">⚠️ NEUTRAL</span></div>
         </div>
-        <div class="review-block">
-          <div class="review-header">REVIEW &mdash; Raw model 97% Broncos vs Market 59% &mdash; 38pt opposite-direction swing</div>
-          <div class="review-row">
-            <span class="review-arrow">Model:</span>
-            <span class="review-text">Suncorp fortress. Haas at prop. Mam at five-eighth. 13 straight Suncorp Friday wins vs Cowboys. Reynolds named.</span>
-          </div>
-          <div class="review-row">
-            <span class="review-arrow">Market:</span>
-            <span class="review-text">Walsh OUT 4-6 wks (fracture). Hunt OUT 8 wks (MCL). Reynolds groin uncertain. Entire Broncos spine decimated. Cowboys at $2.10 is live money.</span>
-          </div>
-          <div class="review-row">
-            <span class="review-arrow verdict">Verdict:</span>
-            <span class="review-text">Override toward market. Suncorp + Haas + Mam tips the balance, but NOT a multi leg. Final 67% Broncos.</span>
-          </div>
-        </div>
-        <div class="game-tip-bar">
-          <span class="tip-label">Tip</span>
-          <span class="tip-team-lg">BRONCOS</span>
-          <span class="tip-divider">|</span>
-          <div class="tip-stat">
-            <span class="tip-stat-label">Raw&rarr;Override</span>
-            <span class="tip-stat-value">97%&rarr;67%</span>
-          </div>
-          <div class="tip-stat">
-            <span class="tip-stat-label">Market</span>
-            <span class="tip-stat-value">58.8%</span>
-          </div>
-          <div class="tip-stat ml-auto">
-            <span class="tip-stat-label">Margin</span>
-            <span class="tip-stat-value">+8</span>
-          </div>
-        </div>
+        <span class="flag flag-strong">💪 STRONG</span>
       </div>
-    </div>
+      <div class="gtb">
+        <span class="tlbl">Tip</span><span class="ttlg">PANTHERS</span><span class="tdiv">|</span>
+        <div class="ts"><span class="tsl">Model</span><span class="tsv">69.5%</span></div>
+        <div class="ts"><span class="tsl">Market</span><span class="tsv">75%</span></div>
+        <div class="ts"><span class="tsl">Edge</span><span class="tsv nil">−5%</span></div>
+        <div class="ts mla"><span class="tsl">Margin</span><span class="tsv">−22</span></div>
+      </div>
+      <div class="gr"><strong>Panther class wins regardless of venue.</strong> Darwin is a true neutral — zero home advantage, both teams take −20 Elo travel penalty. Still leaves Panthers (1651) 138 points clear of Dolphins (1513). Dolphins add their own chaos: Nikorima/Katoa swapped, Donoghoe out injured, Cobbo and Isaako reshuffled. McLean suspended → Tago in for his 100th NRL game. Panthers are the best team in the competition.</div>
+      <div class="rn">Dolphins' spine restructure is genuine risk to execution. Panthers line −14.5 is steep — tip is Panthers, not necessarily the spread.</div>
+    </div></div>
 
-    <!-- G4: RABBITOHS v RAIDERS — STRONG -->
-    <div class="game-card">
-      <div class="game-card-inner">
-        <div class="game-card-header">
-          <div>
-            <div class="game-num">G4 &mdash; SAT APR 11 &mdash; NEUTRAL VENUE</div>
-            <div class="game-matchup"><span class="tipped">Rabbitohs</span> v Raiders</div>
-            <div class="game-meta">
-              <span>&#128205; Optus Stadium, Perth</span>
-              <span>&#128197; Sat 3:00pm</span>
-            </div>
-          </div>
-          <span class="flag flag-strong">&#128170; STRONG</span>
+    <div class="gc"><div class="gci">
+      <div class="gch">
+        <div>
+          <div class="gnum">GAME 4 · SAT 3:00PM</div>
+          <div class="gmatch"><span class="tp">WARRIORS</span> <span style="color:var(--grey);font-size:16px">v</span> TITANS</div>
+          <div class="gmeta"><span>📍 Go Media Auckland</span><span>📅 Sat Apr 18</span></div>
         </div>
-        <div class="game-tip-bar">
-          <span class="tip-label">Tip</span>
-          <span class="tip-team-lg">RABBITOHS</span>
-          <span class="tip-divider">|</span>
-          <div class="tip-stat">
-            <span class="tip-stat-label">Model</span>
-            <span class="tip-stat-value gold">75%</span>
-          </div>
-          <div class="tip-stat">
-            <span class="tip-stat-label">Market</span>
-            <span class="tip-stat-value">66.7%</span>
-          </div>
-          <div class="tip-stat">
-            <span class="tip-stat-label">Edge</span>
-            <span class="tip-stat-value green">+8.3%</span>
-          </div>
-          <div class="tip-stat ml-auto">
-            <span class="tip-stat-label">Margin</span>
-            <span class="tip-stat-value">+12</span>
-          </div>
-        </div>
-        <div class="game-reasoning">
-          Perth neutral &mdash; home advantage zeroed, both teams fly equal distance. The counter-signals are real: <strong>Raiders have beaten Souths 4 straight</strong> and Souths are <strong>5 losses from 7 Perth visits</strong>. Both signals applied to the model. <strong>Brandon Smith returns</strong> from a calf injury at hooker &mdash; an upgrade on Garlick that strengthens the Souths spine. But this Raiders side is 1-4, -69 differential, fielding two rookie halves. Johnston, Mitchell, Murray, Walker at full strength is a different class. Downgraded from raw 97% to 75% to respect the H2H.
-        </div>
-        <div class="risk-note">Do not multi this leg. Raiders H2H over Souths is the strongest single upset signal in the round.</div>
+        <span class="flag flag-strong">💪 STRONG</span>
       </div>
-    </div>
+      <div class="gtb">
+        <span class="tlbl">Tip</span><span class="ttlg">WARRIORS</span><span class="tdiv">|</span>
+        <div class="ts"><span class="tsl">Model</span><span class="tsv">70.3%</span></div>
+        <div class="ts"><span class="tsl">Market</span><span class="tsv">71%</span></div>
+        <div class="ts"><span class="tsl">Edge</span><span class="tsv nil">−1%</span></div>
+        <div class="ts mla"><span class="tsl">Margin</span><span class="tsv">+24</span></div>
+      </div>
+      <div class="gr"><strong>Warriors hold — but Titans are the upset watch of the round.</strong> Go Media Auckland +80 Elo fortress. Warriors (1564) outrank Titans (1419 + 20 manual form revision). But two upset conditions active: Titans 3 straight wins in Auckland, and CNK in reserves (neck) — backline reshuffled with Tuaupiki at fullback, RTS to right centre, Khan-Pereira unproven at wing. Both conditions apply (+10 Elo Titans). Warriors still 70.3%.</div>
+      <div class="rn">Titans came off a 52-10 win and travel with genuine confidence. CNK out significantly weakens Warriors' attack. Most dangerous "strong" tip on the card.</div>
+    </div></div>
 
-    <!-- G5: SHARKS v ROOSTERS — COIN-FLIP -->
-    <div class="game-card">
-      <div class="game-card-inner">
-        <div class="game-card-header">
-          <div>
-            <div class="game-num">G5 &mdash; SAT APR 11 &mdash; NEUTRAL VENUE</div>
-            <div class="game-matchup">Sharks v <span class="tipped">Roosters</span></div>
-            <div class="game-meta">
-              <span>&#128205; Optus Stadium, Perth</span>
-              <span>&#128197; Sat 5:30pm</span>
-            </div>
-          </div>
-          <span class="flag flag-coinflip">&#129689; COIN-FLIP</span>
+    <div class="gc"><div class="gci">
+      <div class="gch">
+        <div>
+          <div class="gnum">GAME 5 · SAT 5:30PM</div>
+          <div class="gmatch"><span class="tp">RABBITOHS</span> <span style="color:var(--grey);font-size:16px">v</span> DRAGONS</div>
+          <div class="gmeta"><span>📍 Accor Stadium</span><span>📅 Sat Apr 18</span></div>
         </div>
-        <div class="game-tip-bar">
-          <span class="tip-label">Tip</span>
-          <span class="tip-team-lg">ROOSTERS</span>
-          <span class="tip-divider">|</span>
-          <div class="tip-stat">
-            <span class="tip-stat-label">Model</span>
-            <span class="tip-stat-value">58%</span>
-          </div>
-          <div class="tip-stat">
-            <span class="tip-stat-label">Market</span>
-            <span class="tip-stat-value">50.0%</span>
-          </div>
-          <div class="tip-stat">
-            <span class="tip-stat-label">Edge</span>
-            <span class="tip-stat-value green">+8%</span>
-          </div>
-          <div class="tip-stat ml-auto">
-            <span class="tip-stat-label">Margin</span>
-            <span class="tip-stat-value">&minus;8</span>
-          </div>
-        </div>
-        <div class="game-reasoning">
-          Raw model said 97% Roosters &mdash; market said 50/50. That 47-point divergence demanded a major override. Perth neutral. Sharks without <strong>Ramsen (Hiroto at right centre)</strong>. Both teams lost last 2 Saturdays. Roosters benefit from <strong>bye freshness (+25 Elo)</strong> and a confirmed Tedesco/DCE/Walker spine. Narrow lean only &mdash; this is a genuine toss-up.
-        </div>
-        <div class="override-note">Raw model 97%, overridden to 58% after Perth neutral venue + market credibility check. Sharks 5/5 vs Sydney opposition outside NSW is the sleeper counter-signal.</div>
-        <div class="risk-note">Would take $2.00 Roosters and still feel uneasy. This game could go either way.</div>
+        <span class="flag flag-banker">🔒 BANKER</span>
       </div>
-    </div>
+      <div class="gtb">
+        <span class="tlbl">Tip</span><span class="ttlg">RABBITOHS</span><span class="tdiv">|</span>
+        <div class="ts"><span class="tsl">Model</span><span class="tsv gold">81.5%</span></div>
+        <div class="ts"><span class="tsl">Market</span><span class="tsv">85%</span></div>
+        <div class="ts"><span class="tsl">Edge</span><span class="tsv nil">−3%</span></div>
+        <div class="ts mla"><span class="tsl">Margin</span><span class="tsv">+36</span></div>
+      </div>
+      <div class="gr"><strong>Locked. This is the banker.</strong> Rabbitohs (1536) vs Dragons (1353) — a 183-point Elo gap before home advantage. Accor Stadium +75, plus +20 H2H boost (10 straight home wins; last Souths home loss to Dragons: 2013). Gray out → Dufty at fullback (first NRL since 2022), Fifita also missing — still overwhelming. Dragons missing Suli (eye socket), Tuipulotu playing through a knee. Model 81.5%, market 85%, margin 36 points. O/U model 50 vs estimated line ~42 — +8pt gap flags for OVERS consideration.</div>
+    </div></div>
 
-    <!-- G6: STORM v WARRIORS — STRONG -->
-    <div class="game-card">
-      <div class="game-card-inner">
-        <div class="game-card-header">
-          <div>
-            <div class="game-num">G6 &mdash; SAT APR 11</div>
-            <div class="game-matchup"><span class="tipped">Storm</span> v Warriors</div>
-            <div class="game-meta">
-              <span>&#128205; AAMI Park, Melbourne</span>
-              <span>&#128197; Sat 7:30pm</span>
-            </div>
-          </div>
-          <span class="flag flag-strong">&#128170; STRONG</span>
+    <div class="gc"><div class="gci">
+      <div class="gch">
+        <div>
+          <div class="gnum">GAME 6 · SAT 7:35PM</div>
+          <div class="gmatch"><span class="tp">TIGERS</span> <span style="color:var(--grey);font-size:16px">v</span> BRONCOS</div>
+          <div class="gmeta"><span>📍 Campbelltown Stadium</span><span>📅 Sat Apr 18</span></div>
         </div>
-        <div class="game-tip-bar">
-          <span class="tip-label">Tip</span>
-          <span class="tip-team-lg">STORM</span>
-          <span class="tip-divider">|</span>
-          <div class="tip-stat">
-            <span class="tip-stat-label">Model</span>
-            <span class="tip-stat-value gold">78%</span>
-          </div>
-          <div class="tip-stat">
-            <span class="tip-stat-label">Market</span>
-            <span class="tip-stat-value">64.5%</span>
-          </div>
-          <div class="tip-stat">
-            <span class="tip-stat-label">Edge</span>
-            <span class="tip-stat-value green">+13.5%</span>
-          </div>
-          <div class="tip-stat ml-auto">
-            <span class="tip-stat-label">Margin</span>
-            <span class="tip-stat-value">+18</span>
-          </div>
-        </div>
-        <div class="game-reasoning">
-          Storm trying to end a <strong>3-game losing streak</strong> &mdash; last time they lost 4 in a row was 2022. <strong>11 straight home wins over the Warriors at AAMI Park</strong>. Metcalf is out (hamstring) and <strong>Pompey is now banned 2 matches</strong> (failed Tuesday judiciary) &mdash; Warriors lose both their five-eighth and left centre. Harris-Tavita at #6, reshuffle in the centres. Boyd's penalty count (10-1 vs Sharks) will be punished by Bellamy's structured ruck. Downgraded from 97% to account for Warriors' genuine Saturday AAMI record (5-3 historically) but the structural case for Storm is overwhelming.
-        </div>
-        <div class="risk-note">Storm 3-game losing streak is unprecedented for this era. If they're flat early, Warriors can cause chaos. Monitor halftime before any live bets.</div>
+        <span class="flag flag-coinflip">🪙 COIN-FLIP</span>
       </div>
-    </div>
+      <div class="gtb">
+        <span class="tlbl">Tip</span><span class="ttlg">TIGERS</span><span class="tdiv">|</span>
+        <div class="ts"><span class="tsl">Model</span><span class="tsv">53.2%</span></div>
+        <div class="ts"><span class="tsl">Market</span><span class="tsv">62%</span></div>
+        <div class="ts"><span class="tsl">Edge</span><span class="tsv nil">−9%</span></div>
+        <div class="ts mla"><span class="tsl">Margin</span><span class="tsv">+3</span></div>
+      </div>
+      <div class="gr"><strong>Luai is back — but the Broncos own this ground.</strong> Luai's return at #6 is a genuine attacking upgrade. Campbelltown home fortress (+75 Elo). The problem: Broncos have 8 straight wins at this venue — documented structural pattern (+20 H2H Elo override + 10 upset condition applied). Reynolds returns at #7 (adductor), partially offsetting Carrigan's suspension (Willison lock, Rogers #9). Model lands at 53.2% Tigers — pure coin-flip. Tipping Tigers for home, holding loosely.</div>
+      <div class="rn">Broncos 8 straight at Campbelltown is not noise. Reynolds return significant. Market at 62% Tigers may be overconfident — Broncos are genuinely live here.</div>
+    </div></div>
 
-    <!-- G7: EELS v TITANS — STRONG -->
-    <div class="game-card">
-      <div class="game-card-inner">
-        <div class="game-card-header">
-          <div>
-            <div class="game-num">G7 &mdash; SUN APR 12</div>
-            <div class="game-matchup"><span class="tipped">Eels</span> v Titans</div>
-            <div class="game-meta">
-              <span>&#128205; CommBank Stadium</span>
-              <span>&#128197; Sun 2:00pm</span>
-            </div>
-          </div>
-          <span class="flag flag-strong">&#128170; STRONG</span>
+    <div class="gc"><div class="gci">
+      <div class="gch">
+        <div>
+          <div class="gnum">GAME 7 · SUN 2:00PM</div>
+          <div class="gmatch"><span class="tp">ROOSTERS</span> <span style="color:var(--grey);font-size:16px">v</span> KNIGHTS</div>
+          <div class="gmeta"><span>📍 Allianz Stadium</span><span>📅 Sun Apr 19</span></div>
         </div>
-        <div class="game-tip-bar">
-          <span class="tip-label">Tip</span>
-          <span class="tip-team-lg">EELS</span>
-          <span class="tip-divider">|</span>
-          <div class="tip-stat">
-            <span class="tip-stat-label">Model</span>
-            <span class="tip-stat-value gold">80%</span>
-          </div>
-          <div class="tip-stat">
-            <span class="tip-stat-label">Market</span>
-            <span class="tip-stat-value">69.0%</span>
-          </div>
-          <div class="tip-stat">
-            <span class="tip-stat-label">Edge</span>
-            <span class="tip-stat-value green">+11%</span>
-          </div>
-          <div class="tip-stat ml-auto">
-            <span class="tip-stat-label">Margin</span>
-            <span class="tip-stat-value">+16</span>
-          </div>
-        </div>
-        <div class="game-reasoning">
-          The Eels are a mess. <strong>Simonsson, Russell, Pezet and Twidle all out</strong>. Volkman starts at five-eighth &mdash; his last NRL game was Round 2 last year. Nanva makes his debut on the wing. That's genuinely terrible. And yet the Titans are structurally worse: 1-4, -64 differential, 14 away losses in a row at non-Suncorp Sunday venues. <strong>Eels 6 straight at CommBank vs Gold Coast</strong>. Moses at halfback is the stabiliser. Back the less-broken team.
-        </div>
-        <div class="risk-note">Volkman rust is the key risk. If he's off-pace at five-eighth, Eels attack stalls. Titans have nothing to lose and could produce 40+ mins of pressure.</div>
+        <span class="flag flag-banker">🔒 BANKER</span>
       </div>
-    </div>
+      <div class="gtb">
+        <span class="tlbl">Tip</span><span class="ttlg">ROOSTERS</span><span class="tdiv">|</span>
+        <div class="ts"><span class="tsl">Model</span><span class="tsv gold">76.2%</span></div>
+        <div class="ts"><span class="tsl">Market</span><span class="tsv">67%</span></div>
+        <div class="ts"><span class="tsl">Edge</span><span class="tsv green">+9%</span></div>
+        <div class="ts mla"><span class="tsl">Margin</span><span class="tsv">+32</span></div>
+      </div>
+      <div class="gr"><strong>Best value pick of the round — Roosters are significantly underpriced.</strong> Roosters (1632) at Allianz (+75 home, +20 H2H override — 7 straight wins vs Knights, last 3 margins all 30+). Full-strength squad back from Perth. Knights: Brown returns at #6, but Lucas out (throat), Frizell carrying ribs, Hopwood and Manuleleua on bench. Model 76.2% vs market 67% — the biggest market divergence of the round. Model margin 32 pts vs Sportsbet line −7.5 (+24.5pt gap, well above the 8pt betting threshold).</div>
+    </div></div>
 
-    <!-- G8: TIGERS v KNIGHTS — REVIEW / OPPOSITE TIPS -->
-    <div class="game-card">
-      <div class="game-card-inner">
-        <div class="game-card-header">
-          <div>
-            <div class="game-num">G8 &mdash; SUN APR 12</div>
-            <div class="game-matchup">Tigers v <span class="tipped">Knights</span></div>
-            <div class="game-meta">
-              <span>&#128205; Campbelltown Sports Stadium</span>
-              <span>&#128197; Sun 4:05pm</span>
-            </div>
-          </div>
-          <span class="flag flag-review">&#9888; REVIEW</span>
+    <div class="gc"><div class="gci">
+      <div class="gch">
+        <div>
+          <div class="gnum">GAME 8 · SUN 4:05PM</div>
+          <div class="gmatch">EELS <span style="color:var(--grey);font-size:16px">v</span> <span class="tp">BULLDOGS</span></div>
+          <div class="gmeta"><span>📍 CommBank Stadium</span><span>📅 Sun Apr 19</span></div>
         </div>
-        <div class="review-block">
-          <div class="review-header">REVIEW &mdash; Model 65% Knights vs Market 57% Tigers &mdash; OPPOSITE TIPS</div>
-          <div class="review-row">
-            <span class="review-arrow">Model:</span>
-            <span class="review-text">Tigers 2/16 at Campbelltown since 2021, 1/9 on Sundays there. Knights won all 3 Sunday games this season. Laulilii suspended. Madden at 6 again. Knights Sunday dominance is real data.</span>
-          </div>
-          <div class="review-row">
-            <span class="review-arrow">Market:</span>
-            <span class="review-text">Tigers 3-1, 2nd on ladder, home game, Doueihi healthy and kicking 5/5. Luai rumoured return. Strong momentum story.</span>
-          </div>
-          <div class="review-row">
-            <span class="review-arrow verdict">Verdict:</span>
-            <span class="review-text">Sticking with model. Luai is NOT confirmed in the team list. Madden is starting. Campbelltown Sunday curse is structural, not narrative. Knights 65%.</span>
-          </div>
-        </div>
-        <div class="game-tip-bar">
-          <span class="tip-label">Tip</span>
-          <span class="tip-team-lg">KNIGHTS</span>
-          <span class="tip-divider">|</span>
-          <div class="tip-stat">
-            <span class="tip-stat-label">Post-override</span>
-            <span class="tip-stat-value">65%</span>
-          </div>
-          <div class="tip-stat">
-            <span class="tip-stat-label">Market</span>
-            <span class="tip-stat-value">47.6%</span>
-          </div>
-          <div class="tip-stat ml-auto">
-            <span class="tip-stat-label">Margin</span>
-            <span class="tip-stat-value">&minus;5</span>
-          </div>
-        </div>
+        <span class="flag flag-lower">— NO FLAG</span>
       </div>
-    </div>
+      <div class="gtb">
+        <span class="tlbl">Tip</span><span class="ttlg">BULLDOGS</span><span class="tdiv">|</span>
+        <div class="ts"><span class="tsl">Model</span><span class="tsv">55.9%</span></div>
+        <div class="ts"><span class="tsl">Market</span><span class="tsv">63%</span></div>
+        <div class="ts"><span class="tsl">Edge</span><span class="tsv nil">−7%</span></div>
+        <div class="ts mla"><span class="tsl">Margin</span><span class="tsv">−7</span></div>
+      </div>
+      <div class="gr"><strong>Bulldogs the tip, but this Eels squad is structurally broken.</strong> Bulldogs (1542) hold a 78-point Elo advantage despite Crichton still out → Tuala at #3. Eels' disruption is severe: Joash Papalii at debut-level fullback (Iongi out), Volkman still at #6 (Pezet unavailable), two new 2nd rowers (Tuilagi concussion, Kautoga knee). One upset condition applied (Crichton absent from favourite). Model 55.9% Bulldogs, market 63%. Tip Bulldogs, no conviction.</div>
+      <div class="rn">Eels at home (+75) and Bulldogs are far from full strength themselves. Market may be overpricing Bulldogs given their own absentees. Neither team inspires confidence.</div>
+    </div></div>
 
   </div>
 </div>
 
-<!-- ROUND SUMMARY -->
 <div class="section">
-  <div class="section-header">
-    <span class="section-label">Round Summary</span>
-    <div class="section-line"></div>
-  </div>
-  <div class="summary-grid">
-    <div class="summary-item">
-      <span class="summary-icon">&#128274;</span>
-      <div>
-        <div class="summary-type">Bankers</div>
-        <div class="summary-detail"><strong>Panthers</strong> (-18 Accor) &middot; <strong>Sea Eagles</strong> (-21 WIN Stadium). Two teams in structural collapse on the receiving end.</div>
-      </div>
-    </div>
-    <div class="summary-item">
-      <span class="summary-icon">&#128170;</span>
-      <div>
-        <div class="summary-type">Strong</div>
-        <div class="summary-detail"><strong>Rabbitohs</strong> (Perth neutral, 75%) &middot; <strong>Storm</strong> (AAMI bounce, 78%) &middot; <strong>Eels</strong> (CommBank, 80% despite injuries)</div>
-      </div>
-    </div>
-    <div class="summary-item">
-      <span class="summary-icon">&#129689;</span>
-      <div>
-        <div class="summary-type">Coin-Flips</div>
-        <div class="summary-detail"><strong>Roosters</strong> vs Sharks Perth &mdash; 58% lean only, market says 50/50 and they're not wrong. <strong>Knights</strong> vs Tigers &mdash; contrarian call, 65%.</div>
-      </div>
-    </div>
-    <div class="summary-item">
-      <span class="summary-icon">&#9888;&#65039;</span>
-      <div>
-        <div class="summary-type">Review Games</div>
-        <div class="summary-detail"><strong>Broncos vs Cowboys</strong> (38pt divergence &mdash; Walsh + Hunt out, overridden to 67%) &middot; <strong>Tigers vs Knights</strong> (opposite tips, model held at 65% Knights)</div>
-      </div>
-    </div>
-    <div class="summary-item">
-      <span class="summary-icon">&#128064;</span>
-      <div>
-        <div class="summary-type">Upset Watch</div>
-        <div class="summary-detail"><strong>Cowboys at Suncorp</strong> ($2.10) &mdash; Walsh/Hunt out makes this genuine. <strong>Raiders in Perth</strong> &mdash; 4 straight wins over Souths. <strong>Tigers at home</strong> if Luai is cleared by Thursday.</div>
-      </div>
-    </div>
+  <div class="section-header"><span class="section-label">Round Summary</span><div class="section-line"></div></div>
+  <div class="sg">
+    <div class="si"><span class="si-ico">🔒</span><div><div class="si-type">Banker</div><div class="si-det"><strong>Rabbitohs</strong> (81.5%) · <strong>Roosters</strong> (76.2%, +9% model edge vs market)</div></div></div>
+    <div class="si"><span class="si-ico">💪</span><div><div class="si-type">Strong</div><div class="si-det"><strong>Cowboys</strong> (68.4%, +6% edge) · <strong>Panthers</strong> (69.5%) · <strong>Warriors</strong> (70.3%)</div></div></div>
+    <div class="si"><span class="si-ico">🪙</span><div><div class="si-type">Coin-Flip</div><div class="si-det"><strong>Storm</strong> (53.2%) · <strong>Tigers</strong> (53.2%) · <strong>Bulldogs</strong> (55.9%)</div></div></div>
+    <div class="si"><span class="si-ico">⚠️</span><div><div class="si-type">Review Games</div><div class="si-det">None — no model/market divergence exceeded 20pt threshold this round</div></div></div>
+    <div class="si"><span class="si-ico">👀</span><div><div class="si-type">Upset Watch</div><div class="si-det"><strong>Titans in Auckland</strong> (G4) — 3 straight wins at Go Media, CNK out for Warriors, travelling with momentum. <strong>Broncos at Campbelltown</strong> (G6) — 8 straight wins there, Reynolds returns.</div></div></div>
   </div>
 </div>
 
-<!-- GROUP CHAT -->
 <div class="section">
-  <div class="section-header">
-    <span class="section-label">Group Chat</span>
-    <div class="section-line"></div>
-  </div>
-  <div class="group-chat-block">
-    <div class="group-chat-label">&#128242; Copy &amp; Send</div>
-    <div class="group-chat-text">
-      <p>Round 6 card is locked. <strong>Panthers (-18)</strong> and <strong>Sea Eagles (-21)</strong> are the bankers &mdash; both play teams in structural collapse. Crichton's out for the Doggies. Dragons scored zero last week and just welcomed Flanagan back from a concussion. Back both.</p>
-      <p>Biggest story: <strong>Walsh AND Hunt are both out for Brisbane</strong>. That's their fullback (fracture, 4-6 wks) and halfback cover (MCL, 8 wks) gone simultaneously. Reynolds is named but his groin is a question mark. Cowboys at $2.10 is live money and I respect the bet. Still tipping <strong>Broncos by 8 at Suncorp</strong> but there's no multi on this game.</p>
-      <p>Contrarian pick of the round: <strong>Knights over Tigers at Campbelltown</strong>. Market has Tigers as home favourites but Tigers are 1 win from 9 Sundays at Campbelltown since 2021. Knights have won every Sunday game this season. Laulilii is suspended. That's $2.10 value with a genuine structural case.</p>
-      <p>Perth double-header: Rabbitohs by 12 but watch it &mdash; Raiders have beaten Souths 4 straight. Sharks vs Roosters is a coin-flip. Roosters from the bye get the lean.</p>
-      <p class="full-card-line">Full card: Panthers &middot; Sea Eagles &middot; Broncos &middot; Rabbitohs &middot; Roosters &middot; Storm &middot; Eels &middot; Knights</p>
+  <div class="section-header"><span class="section-label">Group Chat</span><div class="section-line"></div></div>
+  <div class="gcb">
+    <div class="gcl">📲 Copy &amp; Send</div>
+    <div class="gct">
+      <p><strong>Round 7 card is up. Two bankers, three strongs, three coin-flips, zero reviews.</strong></p>
+      <p>🔒 <strong>Roosters are the value pick of the round.</strong> Model has them at 76% — market only pricing 67%. Biggest divergence all week in the wrong direction for anyone fading them. Seven straight over the Knights at Allianz, last three margins all 30+. Full-strength squad back from Perth. This one writes itself.</p>
+      <p>🔒 <strong>Rabbitohs locked.</strong> 183 Elo points of advantage, 10 straight home wins over the Dragons — last home loss to them was 2013. Model margin 36 points. Check the O/U if you're betting — model says 50, line is around 42.</p>
+      <p>👀 <strong>Upset watch: Titans at Auckland</strong> (G4) — 3 straight wins there, CNK is out for the Warriors, and the Titans are travelling with real momentum off a 52-10 win. Still tipping Warriors but the Titans are very live. <strong>Broncos at Campbelltown</strong> (G6) — 8 straight wins at that ground. Luai back is big for the Tigers but this H2H pattern is real. Coin-flip, hold loosely.</p>
+      <p><strong>No REVIEW games this round</strong> — model and market are aligned across the board.</p>
+      <p class="fcl">Full card: Cowboys · Storm · Panthers · Warriors · Rabbitohs · Tigers · Roosters · Bulldogs</p>
     </div>
   </div>
 </div>
 
-<!-- FOOTER -->
 <div class="footer">
-  <div class="footer-left">NRL 2026 &middot; Model v6.2 &middot; Monte Carlo 1,000 runs &middot; Elo-based &middot; 9&ndash;12 April 2026</div>
-  <div class="footer-right">Season <span>30/40</span> &middot; 75.0%</div>
+  <div class="fl">NRL 2026 · Model v6.2 · Monte Carlo 1,000 runs · Elo-based · seed=42</div>
+  <div class="fr">Season <span>33/48</span> · 68.75%</div>
 </div>
 
 </div>
